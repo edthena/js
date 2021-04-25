@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "UNLICENSED",
   "scripts": {
+    "nuke": "rm -rf node_modules package-lock.json && npm i",
     "lint": "eslint --ext .js .",
     "start": "nodemon"
   },
