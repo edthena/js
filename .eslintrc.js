@@ -1,7 +1,10 @@
 module.exports = {
-  extends: 'airbnb-base',
+  env: { es2021: true },
+  extends: ['airbnb-base', 'prettier'],
+  plugins: ['prettier'],
   rules: {
     'no-console': 'warn',
-    'no-restricted-syntax': 'off'
-  }
-}
+    'no-restricted-syntax': 'off',
+    'prettier/prettier': 'error',
+  },
+};
